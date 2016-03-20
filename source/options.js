@@ -1,3 +1,12 @@
+function onAddButtonClick(event){
+	console.log(event);
+	// alert(JSON.stringify(event));
+}
+function onDeleteButtonClick(event){
+	console.log(event);
+	// alert(JSON.stringify(event));
+	
+}
 function saveOptions() {
 	chrome.extension.getBackgroundPage().settings.setMail(document.getElementById("mail").value);
 	chrome.extension.getBackgroundPage().settings.setURL(document.getElementById("url").value);
